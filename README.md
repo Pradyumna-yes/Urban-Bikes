@@ -112,8 +112,8 @@ Navigate to the following URL in your web browser:
 http://dwgcocg.144.24.144.132.sslip.io/
 
 ### Docker Images
-paddu007/urban_wheel
-sangeetha0007/urban-wheel
+- paddu007/urban_wheel
+- sangeetha0007/urban-wheel
 
 ### User Interface
 - **Dashboard**: Displays real-time visualizations using Power BI.
