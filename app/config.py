@@ -1,8 +1,8 @@
 # app/config.py
 
 class Config:
-    MYSQL_HOST = '140.238.244.101'
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = '1lnli9uELkeWC7GfUQF01an3Yevq7wXbpkM7vskAyMI652tRhUnin4e8gD4DUOjy'
-    MYSQL_DB = 'Project_X'
-    SECRET_KEY = '23456kjhgvccfvgbhnjkmerfdcygvhb'  # Replace with your actual secret key
+    MYSQL_HOST = 'Your_Host_Name'
+    MYSQL_USER = 'Your_User_Name'
+    MYSQL_PASSWORD = 'Your_Password'
+    MYSQL_DB = 'Your_DB_Name'
+    SECRET_KEY = 'Your_Secret_Key'  # Replace with your actual secret key
