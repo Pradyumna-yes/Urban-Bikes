@@ -4,10 +4,10 @@ import mysql.connector
 from datetime import datetime
 import pytz
 
-API_KEY = 'e42659b6b45ae7dd9ca5cfc3674528e84a28e254'
-HOST = '140.238.244.101'
+API_KEY = 'Enter your API Key'
+HOST = 'Enter your Host name'
 USER = 'root'
-PASSWORD = '1lnli9uELkeWC7GfUQF01an3Yevq7wXbpkM7vskAyMI652tRhUnin4e8gD4DUOjy'
+PASSWORD = 'Enter your password'
 DATABASE = 'Project_X'
 
 def fetch_data(api_key):
