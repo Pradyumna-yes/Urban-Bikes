@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Dublin Bike Status Project</title>
+    <style>
+        /* Basic CSS reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Main content styling */
+        .content {
+            padding: 20px;
+            padding-top: 80px; /* Extra padding to account for fixed navbar */
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        /* Styling for headers and paragraphs */
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Contact details styling */
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-details div {
+            margin-bottom: 10px;
+        }
+
+        /* Developer profiles styling */
+        .developers {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .developer {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            flex: 1;
+            max-width: 45%; /* Ensures two cards per row */
+        }
+
+        .developer img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .developer-details {
+            text-align: left;
+        }
+
+        .developer a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .developer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social icons styling */
+        .social-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 10px;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .developer {
+                flex-direction: column;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .developer img {
+                margin: 0 auto 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="dashboard">Dashboard</a>
+        <a href="datatable">Datatable</a>
+        <a href="contact">Contact</a>
+        <a href="about">About</a>
+    </div>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Welcome to the UrbanWheel: Dublin Bike Availability in Real-Time Project. If you have any questions or feedback, please don't hesitate to reach out to us using the form below or via the following contact details:</p>
+        
+        <h2>Contact Form</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+       <h2>Developer Profiles</h2>
+        <div class="developers">
+            <div class="developer">
+                <img id="dev1-img" src="{{ url_for('static', filename='icon/sangeetha.jpg') }}" alt="Developer 1" style="width:100px; height:100px; border-radius:50%; object-fit:cover;">
+                <div class="developer-details">
+                    <strong>Developer 1</strong>
+                    <p>7 years of steadily increasing expertise in the IT industry, with in-depth working knowledge of all stages of the project's software development lifecycle.</p>
+                    <a href="https://github.com/SangeethaR07" target="_blank">GitHub Profile</a>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/r-sangeetha/" target="_blank">
+                            <img id="dev1-linkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="LinkedIn" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                        <a href="https://instagram.com/" target="_blank">
+                            <img id="dev1-instagram" src="{{ url_for('static', filename='icon/instagram.png') }}" alt="Instagram" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                        <a href="mailto:sang.ramesh07@gmail.com">
+                            <img id="dev1-email" src="{{ url_for('static', filename='icon/email.png') }}" alt="Email" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="developer">
+                <img id="dev2-img" src="{{ url_for('static', filename='icon/pradyumna.jpg') }}" alt="Pradyumna" style="width:100px; height:100px; border-radius:50%; object-fit:cover;">
+                <div class="developer-details">
+                    <strong>Pradyumna</strong>
+                    <p>I am a data-driven Business Analyst with an MSc in Business Analysis from DBS and four years of diverse experience in product building, process automation, and business analysis across various industries.</p>
+                    <a href="https://github.com/Pradyumna-yes" target="_blank">GitHub Profile</a>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pradyumna-s/" target="_blank">
+                            <img id="dev2-linkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="LinkedIn" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                        <a href="https://www.instagram.com/pradyumna.me/" target="_blank">
+                            <img id="dev2-instagram" src="{{ url_for('static', filename='icon/instagram.png') }}" alt="Instagram" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                        <a href="mailto:hello@pradyumna.ie">
+                            <img id="dev2-email" src="{{ url_for('static', filename='icon/email.png') }}" alt="Email" class="social-icon" style="width:30px; height:30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const mailtoLink = `mailto:sang.ramesh07@gmail.com,hello@pradyumna.ie?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}&bcc=email1@example.com,email2@example.com`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+    </body>
+</html>
