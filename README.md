@@ -154,7 +154,7 @@ Refer to the Running Locally steps in the [Running the Application](#running-the
 - **routes.py**: Update with your username and password for user authentication.
 - **config.py**: Replace the dummy SQL login details with your actual SQL server login information.
 
-## Authors
+## Contributors
 - **Sangeetha Ramesh**
 - **Pradyumna Shivanandaiah**
 
