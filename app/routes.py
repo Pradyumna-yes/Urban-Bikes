@@ -6,7 +6,7 @@ from app import app, mysql, login_manager
 from datetime import datetime
 
 # In-memory user store for demonstration purposes
-users = {'admin': {'password': 'password'}}
+users = {'Enter_YourName': {'password': 'Your_Password'}}
 
 class User(UserMixin):
     def __init__(self, id):
