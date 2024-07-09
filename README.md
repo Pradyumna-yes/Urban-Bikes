@@ -88,7 +88,7 @@ The Urban Bike Real-Time Dashboard Application is a Flask-based web application 
     python -m venv venv
     .\venv\Scripts\Activate
     ```
-3. **Install Dependencies**:
+3. **Install Dependencie**:
     ```sh
     pip install -r requirements.txt
     ```
