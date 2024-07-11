@@ -10,7 +10,8 @@ The Urban Bike Real-Time Dashboard Application is a Flask-based web application 
 - **Project Information**: Detailed information about the project's vision, mission, and goals.
 
 ## Systems Architecture
-![image](https://github.com/Pradyumna-yes/Urban-Bikes/assets/96283346/85ba6818-5f17-4e82-bdff-ea9607470714)
+![image](https://github.com/Pradyumna-yes/Urban-Bikes/assets/96283346/ab7fb688-fb83-4b0b-9018-6d9bfc6a9514)
+
 
   
 
@@ -114,7 +115,7 @@ The Urban Bike Real-Time Dashboard Application is a Flask-based web application 
 
 ### Accessing the Application
 Navigate to the following URL in your web browser:
-http://dwgcocg.144.24.144.132.sslip.io/
+https://urban-bikes.xyz/
 
 ### Docker Images
 - paddu007/urban_wheel
